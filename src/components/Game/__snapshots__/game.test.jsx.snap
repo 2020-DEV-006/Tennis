@@ -9,17 +9,62 @@ exports[`Game render Game component correctly 1`] = `
   >
     Play Tennis
   </h2>
-</div>
-`;
-
-exports[`Game render correctly Game component correctly 1`] = `
-<div
-  className="tennisBackground"
->
-  <h2
-    className="tennisHeading"
+  <div
+    className="scoreBoard"
   >
-    Play Tennis
-  </h2>
+    <h3>
+      scoreBoard
+    </h3>
+    <div
+      className="playerStyles"
+    >
+      Player1: 
+      <div
+        className="scoreStyles"
+      >
+        0
+      </div>
+    </div>
+    <div
+      className="playerStyles"
+    >
+      Player2: 
+      <div
+        className="scoreStyles"
+      >
+        0
+      </div>
+    </div>
+  </div>
+  <div
+    className="playerBox"
+  >
+    <div>
+      <div
+        className="playerHeading"
+      >
+        Player 1
+      </div>
+      <div
+        className="player"
+        defaultValue={1}
+        onClick={[Function]}
+        value={1}
+      />
+    </div>
+    <div>
+      <div
+        className="playerHeading"
+      >
+        Player 2
+      </div>
+      <div
+        className="player"
+        defaultValue={2}
+        onClick={[Function]}
+        value={2}
+      />
+    </div>
+  </div>
 </div>
 `;

@@ -13,7 +13,9 @@ exports[`ScoreBoard render correctly ScoreBoard component correctly 1`] = `
     Player1: 
     <div
       className="scoreStyles"
-    />
+    >
+      0
+    </div>
   </div>
   <div
     className="playerStyles"
@@ -21,7 +23,9 @@ exports[`ScoreBoard render correctly ScoreBoard component correctly 1`] = `
     Player2: 
     <div
       className="scoreStyles"
-    />
+    >
+      0
+    </div>
   </div>
 </div>
 `;
@@ -39,7 +43,9 @@ exports[`ScoreBoard renders first player correctly 1`] = `
     Player1: 
     <div
       className="scoreStyles"
-    />
+    >
+      0
+    </div>
   </div>
   <div
     className="playerStyles"
@@ -47,7 +53,9 @@ exports[`ScoreBoard renders first player correctly 1`] = `
     Player2: 
     <div
       className="scoreStyles"
-    />
+    >
+      0
+    </div>
   </div>
 </div>
 `;
@@ -65,7 +73,9 @@ exports[`ScoreBoard renders player initial score correctly 1`] = `
     Player1: 
     <div
       className="scoreStyles"
-    />
+    >
+      0
+    </div>
   </div>
   <div
     className="playerStyles"
@@ -73,7 +83,9 @@ exports[`ScoreBoard renders player initial score correctly 1`] = `
     Player2: 
     <div
       className="scoreStyles"
-    />
+    >
+      0
+    </div>
   </div>
 </div>
 `;
@@ -91,7 +103,9 @@ exports[`ScoreBoard renders second player correctly 1`] = `
     Player1: 
     <div
       className="scoreStyles"
-    />
+    >
+      0
+    </div>
   </div>
   <div
     className="playerStyles"
@@ -99,7 +113,9 @@ exports[`ScoreBoard renders second player correctly 1`] = `
     Player2: 
     <div
       className="scoreStyles"
-    />
+    >
+      0
+    </div>
   </div>
 </div>
 `;
