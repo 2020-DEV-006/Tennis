@@ -9,6 +9,12 @@ exports[`Game render Game component correctly 1`] = `
   >
     Play Tennis
   </h2>
+  <button
+    className="resetGame"
+    onClick={[Function]}
+  >
+    Reset Game
+  </button>
   <div
     className="scoreBoard"
   >
@@ -67,5 +73,35 @@ exports[`Game render Game component correctly 1`] = `
     </div>
   </div>
   0
+</div>
+`;
+
+exports[`Game resets the game 1`] = `
+<div
+  className="scoreBoard"
+>
+  <h3>
+    scoreBoard
+  </h3>
+  <div
+    className="playerStyles"
+  >
+    Player1: 
+    <div
+      className="scoreStyles"
+    >
+      0
+    </div>
+  </div>
+  <div
+    className="playerStyles"
+  >
+    Player2: 
+    <div
+      className="scoreStyles"
+    >
+      0
+    </div>
+  </div>
 </div>
 `;

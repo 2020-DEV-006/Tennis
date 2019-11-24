@@ -17,44 +17,59 @@
   color: #ffe72e;
 }
 .scoreBoard {
-    background: #444;
-    width: 300px;
-    margin: 20px auto;
-    padding: 0px 10px 10px 10px;
-    box-shadow: 0 4px 0px #333;
-    border-radius: 15px;
-  }
-  .scoreBoard h3 {
-    text-transform: uppercase;
-    padding: 5px;
-    color: #fff;
-  }
-  .scoreStyles {
-    background: #66bb6a;
-    padding: 6px;
-  }
-  .playerStyles {
-    color: #fafafa;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    border-bottom: solid 2px #444;
-  } 
-  .playerHeading {
-    font-weight: bold;
-    font-size: 16px;
-    color: #fff;
-  }
-  .player {
-    width: 200px;
-    height: 100px;
-    background-image: url("../Images/right.png");
-    background-size: cover;
-    cursor: pointer;
-    width: 100px;
-  }
-  .playerBox {
-    display: flex;
-    margin: 10px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }  
+  background: #444;
+  width: 300px;
+  margin: 20px auto;
+  padding: 0px 10px 10px 10px;
+  box-shadow: 0 4px 0px #333;
+  border-radius: 15px;
+}
+.scoreBoard h3 {
+  text-transform: uppercase;
+  padding: 5px;
+  color: #fff;
+}
+.scoreStyles {
+  background: #66bb6a;
+  padding: 6px;
+}
+.playerStyles {
+  color: #fafafa;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  border-bottom: solid 2px #444;
+}
+.playerHeading {
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+}
+.player {
+  width: 200px;
+  height: 100px;
+  background-image: url("../Images/right.png");
+  background-size: cover;
+  cursor: pointer;
+  width: 100px;
+}
+.playerBox {
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.resetGame {
+  margin: 0px 50px;
+  width: 100px;
+  height: 50px;
+  background: #cb4e4e;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 0 3px #ab3c3c;
+  font-weight: bold;
+}
+.resetGame:focus {
+  outline: none;
+}
