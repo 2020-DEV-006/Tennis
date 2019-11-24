@@ -25,6 +25,13 @@ describe("ScoreBoard", () => {
     );
     expect(rendered.toJSON()).toMatchSnapshot();
   });
-
+  it("renders player initial score correctly", () => {
+    const firstPlayer = 0;
+    const secondPlayer = 0;
+    const rendered = renderer.create(
+      <ScoreBoard firstPlayer={firstPlayer} secondPlayer={secondPlayer} />
+    );
+    expect(rendered.toJSON()).toMatchSnapshot();
+  });
   
 });

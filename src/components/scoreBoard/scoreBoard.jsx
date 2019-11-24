@@ -7,14 +7,14 @@ const constants = {
   PLAYER_2: "Player2: "
 };
 
-const Score = () => (
+const Score = ({ firstPlayer = 0, secondPlayer = 0 }) => (
   <div className="scoreBoard">
     <h3>{constants.SCOREBOARD}</h3>
     <div className="playerStyles">
-      {constants.PLAYER_1}<div className="scoreStyles"></div>
+      {constants.PLAYER_1}<div className="scoreStyles">{firstPlayer}</div>
     </div>
     <div className="playerStyles">
-      {constants.PLAYER_2}<div className="scoreStyles"></div>
+      {constants.PLAYER_2}<div className="scoreStyles">{secondPlayer}</div>
     </div>
   </div>
 );

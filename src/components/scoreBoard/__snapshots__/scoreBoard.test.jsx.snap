@@ -52,6 +52,32 @@ exports[`ScoreBoard renders first player correctly 1`] = `
 </div>
 `;
 
+exports[`ScoreBoard renders player initial score correctly 1`] = `
+<div
+  className="scoreBoard"
+>
+  <h3>
+    scoreBoard
+  </h3>
+  <div
+    className="playerStyles"
+  >
+    Player1: 
+    <div
+      className="scoreStyles"
+    />
+  </div>
+  <div
+    className="playerStyles"
+  >
+    Player2: 
+    <div
+      className="scoreStyles"
+    />
+  </div>
+</div>
+`;
+
 exports[`ScoreBoard renders second player correctly 1`] = `
 <div
   className="scoreBoard"
