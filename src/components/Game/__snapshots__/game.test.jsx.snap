@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game render Game component correctly 1`] = `
+<div
+  className="tennisBackground"
+>
+  <h2
+    className="tennisHeading"
+  >
+    Play Tennis
+  </h2>
+</div>
+`;
+
+exports[`Game render correctly Game component correctly 1`] = `
+<div
+  className="tennisBackground"
+>
+  <h2
+    className="tennisHeading"
+  >
+    Play Tennis
+  </h2>
+</div>
+`;
