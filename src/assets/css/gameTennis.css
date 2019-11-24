@@ -39,3 +39,22 @@
     font-size: 1.2em;
     border-bottom: solid 2px #444;
   } 
+  .playerHeading {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+  .player {
+    width: 200px;
+    height: 100px;
+    background-image: url("../Images/right.png");
+    background-size: cover;
+    cursor: pointer;
+    width: 100px;
+  }
+  .playerBox {
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }  

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player render correctly Player component correctly 1`] = `
+<div>
+  <div
+    className="playerHeading"
+  />
+  <div
+    className="player"
+  />
+</div>
+`;
