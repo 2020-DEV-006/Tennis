@@ -146,6 +146,11 @@ export default class Game extends Component {
             updateScore={this.updateScorePlayer.bind(this)}
           />
         </div>
+        {!secondPlayerAdvantage && !firstPlayerAdvantage && deuce && !won ? (
+          <h1>DEUCE</h1>
+        ) : (
+          <span></span>
+        )}
         {won && <h1>PLAYER {won} WON !!!</h1>}
       </div>
     );
