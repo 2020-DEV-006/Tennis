@@ -73,6 +73,7 @@ exports[`Game render Game component correctly 1`] = `
     </div>
   </div>
   <span />
+  <span />
   0
 </div>
 `;

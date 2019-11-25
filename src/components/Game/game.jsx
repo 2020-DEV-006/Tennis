@@ -151,6 +151,13 @@ export default class Game extends Component {
         ) : (
           <span></span>
         )}
+         {!won && secondPlayerAdvantage ? (
+          <h1>Player 2 Advantage</h1>
+        ) : !won && firstPlayerAdvantage ? (
+          <h1> Player 1 Advantage</h1>
+        ) : (
+          <span></span>
+        )}
         {won && <h1>PLAYER {won} WON !!!</h1>}
       </div>
     );
