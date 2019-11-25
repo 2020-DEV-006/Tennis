@@ -6,7 +6,8 @@ const Tennis = {
   DEUCE: "Deuce!",
   WON: "Won!",
   PLAYER: "Player",
-  RESET_GAME: "Reset Game"
+  RESET_GAME: "Reset Game",
+  
 };
 
 const points = [0, 15, 30, 40, "won"];
@@ -21,7 +22,8 @@ export default class Game extends Component {
       firstPlayerAdvantage: false,
       secondPlayerAdvantage: false,
       won: 0,
-      deuce: false
+      deuce: false,
+      isGameEnded: false
     };
   }
   resetGame = () => {
@@ -32,7 +34,8 @@ export default class Game extends Component {
       firstPlayerAdvantage: false,
       secondPlayerAdvantage: false,
       won: 0,
-      deuce: false
+      deuce: false,
+      isGameEnded: false
     });
   };
 
@@ -44,7 +47,8 @@ export default class Game extends Component {
       secondPlayerAdvantage,
       firstPlayerPointIndex,
       secondPlayerPointIndex,
-      won
+      won,
+      isGameEnded
     } = this.state;
 
     const {
@@ -74,6 +78,7 @@ export default class Game extends Component {
       if (deuce) {
         if (playerAdvantage) {
           this.setState({ gamePoint: true });
+          setTimeout(() =>this.setState({isGameEnded: true}),1000)
         } else {
           this.setState({
             secondPlayerAdvantage: player !== 1,
@@ -92,6 +97,7 @@ export default class Game extends Component {
 
         if (points[playerPointIndex] === "won") {
           this.setState({ won: player });
+          setTimeout(() =>this.setState({isGameEnded: true}),1000)
         } else if (
           points[playerPointIndex] === 40 &&
           points[opponentPlayerPointIndex] === 40
@@ -99,9 +105,11 @@ export default class Game extends Component {
           this.setState({
             deuce: true,
             ...pointIndex
+            
           });
         } else {
           this.setState({ ...pointIndex });
+          
         }
       }
       if (opponentPlayerAdvantage) {
@@ -111,6 +119,7 @@ export default class Game extends Component {
           secondPlayerPointIndex: 3,
           firstPlayerAdvantage: false,
           secondPlayerAdvantage: false
+          
         });
       }
     }
@@ -122,7 +131,8 @@ export default class Game extends Component {
       won,
       deuce,
       secondPlayerAdvantage,
-      firstPlayerAdvantage
+      firstPlayerAdvantage,
+      isGameEnded
     } = this.state;
     return (
       <div className="tennisBackground">
@@ -159,6 +169,9 @@ export default class Game extends Component {
           <span></span>
         )}
         {won && <h1>PLAYER {won} WON !!!</h1>}
+        {isGameEnded && (
+              <h1>Game Ended !!!</h1>
+          )}
       </div>
     );
   }
